@@ -2,6 +2,7 @@
 let timer;
 let audio = new Audio("assets/audio/mrrogers.mp3");
 let number = 90;
+let audio2 = new Audio("assets/audio/itsYouILike.mp3");
 
 window.onload = function () {
     $(".quiz-content").hide();
@@ -24,5 +25,6 @@ function decrement() {
     if (number === 0) {
         $("#timer").hide();
         $(".quiz-content").hide();
+        audio2.play();
     }
 }
