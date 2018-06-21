@@ -1,0 +1,26 @@
+body {
+    font-family: 'Gaegu', cursive;
+    /* background-image: url("../images/mrrogers.jpg");
+    background: no-repeat cover; */
+}
+
+
+h1 {
+    font-family: 'Shrikhand', cursive;
+    margin-top: 1em;
+}
+
+h4 {
+    margin-top: 0.5em;
+}
+
+#timer {
+    font-family: 'Shrikhand', cursive;
+}
+
+.quiz-content {
+    display: none;
+}
+
+/* font-family: 'Shrikhand', cursive;
+font-family: 'Gaegu', cursive; */
