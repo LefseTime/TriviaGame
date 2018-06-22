@@ -57,6 +57,9 @@ window.onload = function () {
         let selectedAnswer3 = $('input[name=q3]:checked').val();
         let selectedAnswer4 = $('input[name=q4]:checked').val();
         let selectedAnswer5 = $('input[name=q5]:checked').val();
+        let selectedAnswer6 = $('input[name=q6]:checked').val();
+        let selectedAnswer7 = $('input[name=q7]:checked').val();
+        let selectedAnswer8 = $('input[name=q8]:checked').val();
 
         if (selectedAnswer1 === "option2") {
             correctAnswer++;
@@ -73,6 +76,15 @@ window.onload = function () {
         if (selectedAnswer5 === "option4") {
             correctAnswer++;
         }
-        $("#writeResults").text(`${correctAnswer} out of 5`);
+        if (selectedAnswer6 === "option4") {
+            correctAnswer++;
+        }
+        if (selectedAnswer7 === "option3") {
+            correctAnswer++;
+        }
+        if (selectedAnswer8 === "option2") {
+            correctAnswer++;
+        }
+        $("#writeResults").text(`${correctAnswer} out of 8`);
     }
 }
