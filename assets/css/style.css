@@ -1,7 +1,10 @@
 body {
     font-family: 'Gaegu', cursive;
-    /* background-image: url("../images/mrrogers.jpg");
-    background: no-repeat cover; */
+    font-size: 1.2em;
+    background: linear-gradient(0deg,rgba(224, 221, 221, 0.7),rgba(201, 201, 201, 0.7)), url("../images/mrrogers.jpg");
+    background: no-repeat cover;
+    background-attachment: fixed;
+    background-position: center top;
 }
 
 
@@ -12,6 +15,10 @@ h1 {
 
 h4 {
     margin-top: 0.5em;
+}
+
+p {
+    font-size: 5em;
 }
 
 .col-md-12 {
@@ -26,5 +33,35 @@ h4 {
     display: none;
 }
 
+.results-section {
+    display: none;
+    font-family: 'Shrikhand', cursive;
+}
+
+.results-section p {
+    font-family: 'Gaegu', cursive;
+    font-size: 1em;
+}
+
+.quote {
+    font-family: 'Gaegu', cursive;
+    font-weight: lighter;
+}
+
+#start {
+    font-family: 'Shrikhand', cursive;
+}
+
+#submit {
+    font-family: 'Shrikhand', cursive;
+}
+
+button {
+    margin-bottom: 5%;
+}
+
+#reset {
+    margin-bottom: 5%;
+}
 /* font-family: 'Shrikhand', cursive;
 font-family: 'Gaegu', cursive; */

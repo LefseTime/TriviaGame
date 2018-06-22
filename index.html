@@ -36,17 +36,18 @@
             </div>
         </div>
 
-        <div class="quiz-content">
+        <div class="quiz-content form-group">
+
             <div class="row">
                 <div class="col-md-12 text-center">
                     <h4>Question 1: Mister Rogers was an ordained ________ minister.</h4>
                 </div>
             </div>
 
-            <div class="row">
+            <div class="row question-1">
                 <div class="col-md-12 text-center">
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="q1" id="exampleRadios1" value="option1" checked>
+                        <input class="form-check-input" type="radio" name="q1" id="exampleRadios1" value="option1">
                         <label class="form-check-label" for="exampleRadios1">
                             Lutheran
                         </label>
@@ -78,10 +79,10 @@
                 </div>
             </div>
 
-            <div class="row">
+            <div class="row question-2">
                 <div class="col-md-12 text-center">
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="q2" id="exampleRadios1" value="option1" checked>
+                        <input class="form-check-input" type="radio" name="q2" id="exampleRadios1" value="option1">
                         <label class="form-check-label" for="exampleRadios1">
                             140 lbs
                         </label>
@@ -113,10 +114,10 @@
                 </div>
             </div>
 
-            <div class="row">
+            <div class="row question-3">
                 <div class="col-md-12 text-center">
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="q3" id="exampleRadios1" value="option1" checked>
+                        <input class="form-check-input" type="radio" name="q3" id="exampleRadios1" value="option1">
                         <label class="form-check-label" for="exampleRadios1">
                             Michael Keaton
                         </label>
@@ -148,10 +149,10 @@
                 </div>
             </div>
 
-            <div class="row">
+            <div class="row question-4">
                 <div class="col-md-12 text-center">
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="q4" id="exampleRadios1" value="option1" checked>
+                        <input class="form-check-input" type="radio" name="q4" id="exampleRadios1" value="option1">
                         <label class="form-check-label" for="exampleRadios1">
                             His mother made them for him.
                         </label>
@@ -178,53 +179,117 @@
             </div>
 
             <div class="row">
-                    <div class="col-md-12 text-center">
-                        <h4>Question 5: When did Mister Rogers die?</h4>
+                <div class="col-md-12 text-center">
+                    <h4>Question 5: When did Mister Rogers die?</h4>
+                </div>
+            </div>
+
+            <div class="row question-5">
+                <div class="col-md-12 text-center">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="q5" id="exampleRadios1" value="option1">
+                        <label class="form-check-label" for="exampleRadios1">
+                            1995
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="q5" id="exampleRadios2" value="option2">
+                        <label class="form-check-label" for="exampleRadios2">
+                            2001
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="q5" id="exampleRadios3" value="option3">
+                        <label class="form-check-label" for="exampleRadios3">
+                            2008
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="q5" id="exampleRadios4" value="option4">
+                        <label class="form-check-label" for="exampleRadios4">
+                            Mister Rogers lives forever in our hearts.
+                        </label>
                     </div>
                 </div>
-    
-                <div class="row">
-                    <div class="col-md-12 text-center">
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="q5" id="exampleRadios1" value="option1" checked>
-                            <label class="form-check-label" for="exampleRadios1">
-                                1995
-                            </label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="q5" id="exampleRadios2" value="option2">
-                            <label class="form-check-label" for="exampleRadios2">
-                                2001
-                            </label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="q5" id="exampleRadios3" value="option3">
-                            <label class="form-check-label" for="exampleRadios3">
-                                2008
-                            </label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="q5" id="exampleRadios4" value="option4">
-                            <label class="form-check-label" for="exampleRadios4">
-                               Mister Rogers lives forever in our hearts. 
-                            </label>
-                        </div>
-                    </div>
-                </div>
-    
+            </div>
+
 
             <div class="row">
                 <div class="col-md-12 text-center">
-                    <input type="submit" value="Finish">
+                    <button id="submit">Finish</button>
                 </div>
             </div>
         </div>
 
+        <div class="results-section">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h3>Results</h3>
+                </div>
+                <div class="col-md-12 text-center">
+                    <h4 id="writeResults"></h4>
+                </div>
+                <div class="col-md-12 text-center">
+                    <h5 class="quote">“I'm proud of you for the times you came in second, or third, or fourth, but what you did was the best
+                        you have ever done”
+                        <br> ― Fred Rogers
+                    </h5>
+                </div>
+            </div>
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-            crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
-            crossorigin="anonymous"></script>
+            <hr>
+
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h3>Answers</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p>Question 1: Mister Rogers was an ordained ________ minister.
+                        <br> Answer: Presbyterian
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p>Question 2: What weight did Mister Rogers always try to maintain?
+                        <br> Answer: 143 lbs
+                        <br> (He maintained this weight for his wife because the digits correspond to the number of letters in
+                        the phrase "I love you.")
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p>Question 3: Which actor got his start on Mister Rogers' Neighborhood as one of the "Flying Zookeeni Brothers?"
+                        <br> Answer: Michael Keaton
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p>Question 4: Where did Mister Rogers get his sweaters?
+                        <br> Answer: His mother made them for him.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p>Question 5: When did Mister Rogers die?
+                        <br> Answer: Mister Rogers lives forever in our hearts.
+                    </p>
+                </div>
+                <div class="col-md-12 text-center">
+                    <button id="reset" value="Try Again">Try Again</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
